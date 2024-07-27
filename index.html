@@ -1,84 +1,219 @@
+<!-- ЗАБОРОНЕНО ЗМІНЮВАТИ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Our project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500..600;1,500..600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/our-team-project/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/our-team-project/assets/vendor-6f42c08a.js">
+    <link rel="stylesheet" href="/our-team-project/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/our-team-project/assets/index-9b1121cc.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    
+    
+    
+    <section class="benefits" id="benefits">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <div class="container-benefits">
+      <h2 class="benefits-title">BENEFITS OF WORKING WITH ME</h2>
+      <ul class="benefits-list">
+        <li class="benefit-item">
+          <svg class="benefit-icon" width="48" height="48">
+            <use href="/our-team-project/assets/benefits-icon-482b4967.svg#icon-Featured-icon1"></use>
+          </svg>
+          <h3 class="benefit-title">Expertise</h3>
+          <p class="benefit-description">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="benefit-item">
+          <svg class="benefit-icon" width="48" height="48">
+            <use href="/our-team-project/assets/benefits-icon-482b4967.svg#icon-Featured-icon2"></use>
+          </svg>
+          <h3 class="benefit-title">Communication</h3>
+          <p class="benefit-description">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+        <li class="benefit-item">
+          <svg class="benefit-icon" width="48" height="48">
+            <use href="/our-team-project/assets/benefits-icon-482b4967.svg#icon-Featured-icon3"></use>
+          </svg>
+          <h3 class="benefit-title">Art</h3>
+          <p class="benefit-description">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefit-item">
+          <svg class="benefit-icon" width="48" height="48">
+            <use href="/our-team-project/assets/benefits-icon-482b4967.svg#icon-Featured-icon4"></use>
+          </svg>
+          <h3 class="benefit-title">Urgent execution</h3>
+          <p class="benefit-description">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
         </li>
       </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <a href="#work-together" class="order-project">Order the project</a>
   </div>
 </section>
 
+    
+    <section class="faq">
+  <div class="container">
+    <h2 class="faq-title">FAQ</h2>
+    <ul class="accordion-container faq-list">
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>
+              What programming languages are most often used in your project?
+            </p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>What are the deadlines for the project?</p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>What payment methods do you accept?</p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>How can I contact you?</p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>Do you provide advice or support?</p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-list-title">
+          <button type="button" class="ac-trigger faq-list-btn">
+            <p>
+              What does the process of developing a software product look like
+              from idea to implementation?
+            </p>
+          </button>
+        </h3>
+        <div class="ac-panel faq-list-panel">
+          <p class="ac-text faq-list-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    
+    
+    <section class="container wt-section">
+    <h2 class="wt-title">
+        <img class="wt-img" 
+        srcset="../img/work-tog/avatar-88.webp 88w, ../img/work-tog/avatar-132.webp 132w, ../img/work-tog/avatar-210.webp 210w"
+        src="../img/work-tog/avatar-132.webp" alt="avatar">Let’s 
+        <span class="wt_title__current">work</span>
+        <br>
+        together
+    </h2>
+    <form class="wt-form">
+        <input class="wt-input" type="email" name="email" placeholder="clients@gmail.com" autocomplete="off" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+        <input class="wt-input" type="text" autocomplete="off" name="comment" placeholder="comments">
+        <button class="wt-button" type="submit">Send</button>
+    </form>
+    <div class="wt-linkbox">
+        <a class="wt-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        <a class="wt-link" href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a>
+    </div>
+</section>
+<div class="modal-backDrop is-closed">
+    <div class="modal-windov">
+        <button class="modal-close">
+            <svg class="modal-svg">
+                <use href="../img/sprite.svg#x"></use>
+            </svg>
+        </button>
+        <h3 class="modal-title">fadfs</h3>
+        <p class="modal-text">adsfasdfasc  efgvefg esg f vdf df ga aga</p>
+    </div>
+</div>
 
     
   </body>
