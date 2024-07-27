@@ -9,11 +9,14 @@
     height: 44px;
     border-radius: 12px;
     display: inline-block;
+    margin-right: 8px;
+
+    transform: translate(0, 9px);
 }
 
 .wt-title {
     font-size: 40px;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: uppercase;
     color: var(--main-text);
     font-weight: 500;
@@ -23,6 +26,12 @@
 .wt_title__current {
     color: var(--button-text);
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+
 
 .wt-form {
     display: flex;
@@ -81,4 +90,10 @@
   
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
+}
+
+.icon-left {
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
