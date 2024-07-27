@@ -96,15 +96,18 @@
   .benefit-item {
     width: calc((100% - 44px) / 2);
   }
-  .benefits-title {
-    margin-right: 412px;
-  }
   .container-benefits {
     display: flex;
     flex-wrap: wrap;
+    gap: 412px;
   }
   .benefits-list {
     width: 660px;
     height: 556px;
+  }
+
+  .order-project {
+    position: relative;
+    align-self: flex-start;
   }
 }
