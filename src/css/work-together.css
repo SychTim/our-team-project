@@ -1,0 +1,160 @@
+/* "wt" means "work together"*/
+
+.wt-section {
+    padding: 32px 16px;
+}
+
+.wt-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 8px;
+
+    transform: translate(0, 9px);
+}
+
+.wt-title {
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--main-text);
+    font-weight: 500;
+
+    margin-bottom: 63px;
+}
+.wt_title__current {
+    color: var(--button-text);
+}
+
+@media screen and (min-width: 768px) {
+    .wt-section {
+        padding: 80px 32px 169px;
+    }
+
+    .wt-img {
+        width: 70px;
+        height: 70px;
+
+        margin-right: 20px;
+    }
+
+    .wt-title {
+        font-size: 64px;
+        margin-bottom: 18px;
+    }
+}
+
+.wt-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.wt-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+
+    color: var(--main-text);
+
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+}
+.wt-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(250, 250, 250, 0.6);
+}
+.wt-input:focus-visible {
+    outline: none;
+}
+
+.wt-button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--button-text);
+    color: var(--main-text);
+
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .wt-form {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+    .wt-form :first-child {
+        margin-right: 32px;
+    }
+
+    .wt-input {
+        width: 245px;
+    }
+
+    .wt-button {
+        width: 150px;
+        height: 150px;
+        margin-top: 0;
+        margin-left: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+.wt-linkbox {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.wt-link {
+    display: block;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    margin-right: 4px;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-text);
+}
+
+@media screen and (min-width: 768px) {
+    .wt-link {
+        font-size: 16px;
+        padding: 18px 32px;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wt-section {
+        padding: 80px 196px 169px;
+        width: 1440px;
+    }
+
+    .wt-input {
+        width: 390px;
+    }
+    .wt-input :first-child {
+        margin-right: 32px;
+    }
+
+    .wt-button {
+        margin-left: 86px;
+    }
+}
+
+.icon-left {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
