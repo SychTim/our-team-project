@@ -1,0 +1,74 @@
+.modal-backDrop {
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(15, 15, 16, 0.6);
+    position: fixed;
+    top: 0;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
+    
+}
+
+.is-closed {
+    transform: scale(0);
+}
+
+.modal-windov {
+    position: relative;
+    background-color: var(--background);
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    margin: auto;
+    top: 35vh;
+}
+
+.modal-close {
+    display: block;
+    position: absolute;
+    padding: 0;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 16px;
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+}
+
+.modal-svg {
+    width: 22px;
+    height: 22px;
+}
+.modal-svg use {
+    transform: translate(-5px, -5px);
+}
+
+@media screen and (min-width: 768px) {
+    .modal-windov {
+        width: 492px;
+        padding: 64px;
+    }
+
+    .modal-title {
+        padding: 0 47px;
+    }
+}
