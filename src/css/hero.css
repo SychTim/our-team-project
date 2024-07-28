@@ -2,8 +2,7 @@
 display: flex;
 flex-wrap: wrap;
 padding: 281px 16px;
-background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5));;
-
+background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .hero-text {
     font-weight: 500;
