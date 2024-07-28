@@ -1,10 +1,14 @@
 import Accordion from 'accordion-js';
-
+import 'accordion-js/dist/accordion.min.css';
+import '../css/about-me.css';
 import Swiper from 'swiper';
 import '../../node_modules/swiper/swiper.css';
 
 export function aboutmeaccordion() {
-  new Accordion('.accordion-container-first', {
+  new Accordion('.aboutme-accordion', {
+    elementClass: 'aboutme-accordion-item',
+    triggerClass: 'btn-arrow-read-more',
+    panelClass: 'aboutme-accord-dropdown',
     duration: 600,
     showMultiple: true,
     openOnInit: [0],
