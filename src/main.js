@@ -15,3 +15,6 @@ import {
   addClass,
   removeClass,
 } from './js/covers';
+
+import { initSwiper } from './js/reviews';
+initSwiper();
