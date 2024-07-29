@@ -10,3 +10,4 @@ import { aboutmeswipper } from "./js/about-me";
 aboutmeswipper();
 
 import { isInViewport, animateElementOnScroll, addClass, removeClass } from './js/covers';
+

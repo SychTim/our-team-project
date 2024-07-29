@@ -1,0 +1,241 @@
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 20px;
+    background: transparent;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.header-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    transform: translateY(0px);
+}
+
+.header-profile .header-name-profile {
+    margin-left: 8px;
+    font-size: 20px;
+    color: #FAFAFA;
+}
+
+nav .header-menu-text {
+    position: relative;
+    transform: translateY(15px);
+}
+
+#menu-list {
+    position: absolute;
+    transform: translateX(-12px) translateY(20px);
+    font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+text-decoration-skip-ink: none;
+color: #fafafa;
+}
+
+#menu-list li a:hover {
+    color: #ed3b44;
+}
+
+.header-menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: #fafafa;
+    
+}
+
+.header-menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.header-order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 60px;
+    border: none;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #ed3b44;
+}
+
+.header-menu .header-order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 60px;
+    padding: 14px 31px;
+    width: 164px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.header-order-button:hover {
+    background-color: #e0373f;
+}
+
+.header-menu .header-order-button:hover {
+    background-color: #e0373f;
+}
+
+.header-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-menu ul li {
+    margin: 20px 0;
+    font-size: 24px;
+}
+.header-menu ul li a {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+}
+
+.header-menu ul li a:hover {
+    color: #ed3b44;
+}
+
+.header-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu .header-order-button {
+    margin-top: 20px;
+}
+
+.header-close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fafafa;
+}
+
+/* Mobile Styles (320px to 767px) */
+@media (max-width: 767px) {
+    .header-menu-icon {
+        display: inline-block;
+    }
+
+    .header-menu-text {
+        display: none;
+    }
+
+    header .header-order-button {
+        display: none;
+    }
+}
+
+/* Tablet Styles (from 768px) */
+@media (min-width: 768px) {
+    .header-menu-icon {
+        display: none;
+    }
+
+    .header-menu-text {
+        display: inline-block;
+    }
+
+    .header-order-button {
+        display: inline-block;
+    }
+}
+
+/* Desktop Styles (from 1440px) */
+@media (min-width: 1440px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    .header-profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-profile .header-name-profile {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    .header-container {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-container {
+        max-width: 1440px;
+    }
+}
+
