@@ -7,8 +7,8 @@ import '../../node_modules/swiper/swiper.css';
 export function aboutmeaccordion() {
   new Accordion('.aboutme-accordion', {
     elementClass: 'aboutme-accordion-item',
-    triggerClass: 'btn-arrow-read-more',
     panelClass: 'aboutme-accord-dropdown',
+    triggerClass: 'btn-arrow-read-more',
     duration: 600,
     showMultiple: true,
     openOnInit: [0],
