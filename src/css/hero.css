@@ -1,8 +1,15 @@
+.container {
+    margin: 0;
+}
 .hero {
 display: flex;
 flex-wrap: wrap;
-padding: 281px 16px;
-background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+padding: 281px 16px 32px;
+background-position: center;
+background-repeat: no-repeat;
+/* width: 100vw;
+height: 100vh; */
+background: linear-gradient(to right, rgba(255, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8) 70%);
 }
 .hero-text {
     font-weight: 500;
@@ -21,6 +28,7 @@ background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 
     padding-top: 212px;
     margin: 0 auto;
     justify-content: center;
+    
     color: #fafafa;
 }
 .hero-icon-li {
@@ -29,7 +37,13 @@ background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 
     padding: 10px 12px;
     width: 37px;
     height: 37px;
-    
+    justify-content: center;
+}
+.socials {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .hero-icon-a {
     justify-content: center;
@@ -54,16 +68,26 @@ background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 
         width: 768px;
     }
     .hero {
-        padding: 300px 104px 274px 32px;
+        /* padding: 300px 104px 32px; */
     }
     .hero-text {
         font-size: 90px;
+        margin: none;
     }
     .hero-ul {
         justify-content: flex-end;
-        padding: 18px 24px;
+        padding: 187px 32px 32px;
+        justify-content: right;
+        margin: 0;
     }
     .hero-icon-li {
+        border-radius: 60px;
+        padding: 18px 17px;
+        width: 53px;
+        height: 55px;
+    }
+    .hero-email {
+        border-radius: 60px;
         padding: 18px 24px;
         width: 223px;
         height: 55px;
