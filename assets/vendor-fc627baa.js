@@ -8,4 +8,4 @@ function Ls(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"d
         rotateZ(${f.rotate?l?-I:I:0}deg)
         scale(${D})
       `;if(f.slideShadows){let x=u.querySelector(".swiper-slide-shadow");x||(x=ge("cards",u)),x&&(x.style.opacity=Math.min(Math.max((Math.abs(w)-.5)/.5,0),1))}u.style.zIndex=-Math.abs(Math.round(h))+a.length;const E=Le(f,u);E.style.transform=T}},setTransition:a=>{const c=e.slides.map(l=>me(l));c.forEach(l=>{l.style.transitionDuration=`${a}ms`,l.querySelectorAll(".swiper-slide-shadow").forEach(f=>{f.style.transitionDuration=`${a}ms`})}),Ue({swiper:e,duration:a,transformElements:c})},perspective:()=>!0,overwriteParams:()=>({watchSlidesProgress:!0,virtualTranslate:!e.params.cssMode})})}const Qn=[Mn,Cn,Pn,An,Ln,On,In,Dn,zn,Rn,$n,kn,Nn,Fn,Bn,Hn,jn,Yn,Wn,Un,Kn,Jn,Zn];Q.use(Qn);export{ea as A,Q as S,ta as a};
-//# sourceMappingURL=vendor-3d672469.js.map
+//# sourceMappingURL=vendor-fc627baa.js.map
