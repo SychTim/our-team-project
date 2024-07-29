@@ -1,0 +1,340 @@
+.about-me {
+  padding: 32px 0;
+}
+
+.aboutme-container-story {
+  border-radius: 24px;
+  max-width: 100%;
+  min-height: 500px;
+  background-color: #242527;
+  padding: 32px;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.aboutme-story {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 105%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
+}
+
+.aboutme-story-red {
+  color: var(--button-text);
+}
+
+.aboutme-story-gray {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-photo {
+  border-radius: 24px;
+  max-width: 100%;
+  min-height: 500px;
+  background-image: url('../img/aboutme-1x-mob.png');
+  background-size: cover;
+  margin-bottom: 12px;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-resolution: 192dpi) {
+  .aboutme-photo {
+    background-image: url('../img/aboutme-2x-mob.png');
+  }
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding: 32px 0 48px 0;
+  }
+
+  .aboutme-container-story {
+    padding: 64px;
+    min-height: 700px;
+  }
+
+  .aboutme-story {
+    font-size: 38px;
+    line-height: 1.05263;
+  }
+
+  .aboutme-photo {
+    min-width: 700px;
+    min-height: 700px;
+    background-image: url('../img/aboutme-1x-tab.png');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .aboutme-photo {
+      background-image: url('../img/aboutme-2x-tab.png');
+    }
+  }
+}
+
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding: 48px 0 82px 0;
+  }
+
+  .aboutme-wrap-story {
+    display: flex;
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .aboutme-container-story {
+    min-width: 50%;
+  }
+
+  .aboutme-photo {
+    min-width: 50%;
+    min-height: 700px;
+    background-image: url('../img/aboutme-1x.png');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .aboutme-photo {
+      background-image: url('../img/aboutme-2x.png');
+    }
+  }
+}
+/*---------------------------------- Swiper --------------------------------*/
+.swiper-wrapper {
+  display: flex;
+}
+
+li.swiper-slide {
+  display: flex;
+}
+
+.aboutme-skills-circle {
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  width: 130px;
+  aspect-ratio: 3/3;
+  cursor: pointer;
+}
+
+.about-me-wrapper-item {
+  display: flex;
+}
+
+.aboutme-skills-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+@media screen and (min-width: 375px) {
+  .aboutme-skills-item {
+    font-size: 20px;
+  }
+}
+
+.aboutme-skills-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-left: 55px;
+}
+
+@keyframes wiggle-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.aboutme-skills-btn-icon {
+  stroke: var(--arrow);
+  fill: none;
+  animation: wiggle-right 1s infinite;
+}
+
+.aboutme-container-skills {
+  display: flex;
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+@media screen and (min-width: 768px) {
+  .aboutme-skills-btn {
+    margin-left: 64px;
+  }
+
+  .aboutme-skills-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+@media screen and (min-width: 1440px) {
+  .aboutme-container-skills {
+    margin-left: 32px;
+  }
+
+  .aboutme-skills-circle {
+    min-width: 200px;
+  }
+
+  .aboutme-skills-btn {
+    margin-left: 72px;
+  }
+}
+
+.aboutme-accordion-item {
+  background-color: transparent;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 0;
+}
+.aboutme-list-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 32px;
+}
+.aboutme-accordion-item:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.aboutme-accordion-item .btn-arrow-read-more {
+  font: inherit;
+  padding: 0;
+}
+.btn-arrow-read-more p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  padding-right: 60px;
+  padding-bottom: 44px;
+  padding-top: 20px;
+}
+
+.aboutme-accordion-item .btn-arrow-read-more::after {
+  content: url(../img/arrow-down.svg);
+  width: 30px;
+}
+.aboutme-accord-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.aboutme-accordion-item .aboutme-accord-dropdown .faq-list-text {
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.aboutme-accordion-item.is-active
+  > .aboutme-title-accordion
+  .btn-arrow-read-more::after {
+  content: url(../img/arrow.svg);
+}
+
+.aboutme-text-accordion {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  /* padding-bottom: 20px; */
+}
+
+.aboutme-accordion {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutme-accordion {
+    margin: 64px 0;
+  }
+  .aboutme-accord-dropdown {
+    gap: 16px;
+  }
+
+  .btn-arrow-read-more p {
+    padding-right: 200px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .aboutme-accordion-item .btn-arrow-read-more::after {
+    content: url(../img/arrow-down.svg);
+    width: 40px;
+    top: 60%;
+  }
+
+  .aboutme-accordion-item.is-active
+    > .aboutme-title-accordion
+    .btn-arrow-read-more::after {
+    content: url(../img/arrow.svg);
+  }
+  .aboutme-text-accordion {
+    /* padding-bottom: 32px;
+    padding-top: 12px; */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .btn-arrow-read-more p {
+    padding-right: 60px;
+    padding-bottom: 42px;
+  }
+
+  .aboutme-accordion-item .btn-arrow-read-more::after {
+    top: 50%;
+  }
+  .aboutme-text-accordion {
+    max-width: 612px;
+  }
+  .aboutme-accord-dropdown {
+    margin-left: 50%;
+    margin-right: 60px;
+    gap: 32px;
+  }
+
+  .aboutme-text-accordion {
+    max-width: 612px;
+  }
+}
+.aboutme-text-accordion-first {
+  padding-bottom: 0;
+}
