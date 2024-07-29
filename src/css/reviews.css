@@ -1,24 +1,24 @@
-.container {
+.reviews .container {
   padding: 0 20px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 @media screen and (min-width: 375px) {
-  .container {
+  .reviews .container {
     width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .reviews .container {
     width: 768px;
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .reviews .container {
     width: 1440px;
     padding: 0 100px;
   }
