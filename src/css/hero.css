@@ -5,19 +5,20 @@
 display: flex;
 flex-wrap: wrap;
 /* padding: 281px 16px 32px; */
-background-position: center;
-background-repeat: no-repeat;
+/* background-position: center; */
+/* background-repeat: no-repeat; */
 /* width: 100vw;
 height: 100vh; */
-background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 70%);
-/* background-image: url(../img/hero-mob.jpg); */
+/* background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 70%); */
 }
 .hero .container {
     padding: 281px 16px 32px;
+    background-image: url(../img/hero/hero-mob.jpg);
+    background-repeat: repeat-y;
 }
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
-        /* background-image: url(../img/hero-mob-2x.jpg); */
+    .hero .container {
+        background-image: url(../img/hero/hero-mob-2x.jpg);
     }
 }
 .hero-text {
@@ -77,15 +78,15 @@ background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.
     /* .container {
         width: 768px;
     } */
-    .hero {
-        /* background-image: url(../img/hero-pl.jpg); */
+    .hero .container {
+        background-image: url(../img/hero/hero-pl.jpg);
     }
     .hero .container {
         padding: 300px 32px 32px;
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .hero {
-            /* background-image: url(../img/hero-pl-2x.jpg); */
+        .hero .container {
+            background-image: url(../img/hero/hero-pl-2x.jpg);
         }
     }
     .hero-text {
@@ -115,16 +116,15 @@ background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.
     /* .container {
         width: 1440px;
     } */
-    .hero {
-        /* padding: 300px 32px 32px 178px; */
-        /* background-image: url(../img/hero-desctop.jpg); */
+    .hero .container {
+        background-image: url(../img/hero/hero-desctop.jpg);
     }
     .hero-text {
         padding: 0 146px;
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .hero {
-            /* background-image: url(../img/hero-desctop-2x.jpg); */
+        .hero .container {
+            background-image: url(../img/hero/hero-desctop-2x.jpg);
         }
     }
 }
