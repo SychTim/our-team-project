@@ -15,6 +15,7 @@
 @import url('./projects.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
+@import url('./modal.css');
 
 
 :root {
@@ -24,6 +25,7 @@
   --arrow: #3b3b3b;
   --button-text: #ed3b44;
   --main-text: #fafafa;
+  --color1: #3b3b3b;
   
 
 

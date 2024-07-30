@@ -1,0 +1,122 @@
+.about-me .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  min-width: 320px;
+  /* max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.benefits-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: left;
+}
+
+.benefit-item {
+  background-color: #242527;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 344px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.benefit-icon {
+  display: inline-block;
+  margin-bottom: 64px;
+  stroke-width: 0;
+  stroke: #fafafa;
+  fill: #ed3b44;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.02em;
+  color: #fafafa;
+  margin-bottom: 16px;
+}
+
+.benefit-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(250, 250, 250, 0.6);
+  word-wrap: break-word;
+}
+.order-project {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 187px;
+  height: 55px;
+  margin-top:32px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafafa;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  text-decoration: none;
+  transition: border-color ease-in 250ms;
+}
+.order-project:hover {
+  border-color: #fafafa;
+}
+
+/* Breakpoints */
+
+/* Tablet: 768px and up */
+@media screen and (min-width: 768px) {
+  /* .container {
+    max-width: 768px;
+  } */
+  .benefit-item {
+    width: calc((100% - 44px) / 2);
+  }
+  .order-project {
+    margin-top: 64px;
+  }
+}
+
+/* Desktop: 1440px and up */
+@media screen and (min-width: 1440px) {
+  /* .container {
+    max-width: 1440px;
+  } */
+  .container-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 412px;
+    justify-content: space-between;
+  }
+  .benefits-list {
+    width: 660px;
+    height: 556px;
+  }
+  .benefit-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .order-project {
+    margin-left: 748px;
+  }
+}
