@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+// import 'swiper/css/bundle';
 
 let reviews = [];
 let swiperInstance;
