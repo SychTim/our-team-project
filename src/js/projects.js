@@ -15,17 +15,17 @@ export function addSwiperProj() {
     allowTouchMove: true,
     direction: 'horizontal',
     watchOverflow: true,
-  
+
     // Navigation arrows
     // navigation: {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev',
     // },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-      },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
   });
 
   buttNext.addEventListener('click', nextSlide);
@@ -33,11 +33,23 @@ export function addSwiperProj() {
 
   function nextSlide() {
     swiperProjects.slideNext();
+    console.log(swiperProjects.activeIndex);
+    if (swiperProjects.activeIndex === 2) {
+      buttNext.classList.add('is-dark');
+    } else {
+      buttNext.classList.remove('is-dark');
+    }
+    buttPrev.classList.remove('is-dark');
   }
 
   function prevSlide() {
     swiperProjects.slidePrev();
+    console.log(swiperProjects.activeIndex);
+    if (swiperProjects.activeIndex === 0) {
+      buttPrev.classList.add('is-dark');
+    } else {
+      buttPrev.classList.remove('is-dark');
+    }
+    buttNext.classList.remove('is-dark');
   }
 }
-
-
