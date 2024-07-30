@@ -18,3 +18,6 @@ import {
 
 import { initSwiper } from './js/reviews';
 initSwiper();
+
+import { headerAktivator } from './js/header';
+headerAktivator();

@@ -1,3 +1,4 @@
+export function headerAktivator() {
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('header-menu-icon');
     const menuText = document.getElementById('header-menu-text');
@@ -90,3 +91,4 @@ document.querySelectorAll('#menu-list a').forEach(anchor => {
         document.getElementById('menu-list').style.display = 'none';
     });
 });
+}
