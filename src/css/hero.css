@@ -4,16 +4,20 @@
 .hero {
 display: flex;
 flex-wrap: wrap;
-padding: 281px 16px 32px;
+/* padding: 281px 16px 32px; */
 background-position: center;
 background-repeat: no-repeat;
 /* width: 100vw;
 height: 100vh; */
-background-image: url(../img/hero-mob.jpg);
+background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 70%);
+/* background-image: url(../img/hero-mob.jpg); */
+}
+.hero .container {
+    padding: 281px 16px 32px;
 }
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/hero-mob-2x.jpg);
+        /* background-image: url(../img/hero-mob-2x.jpg); */
     }
 }
 .hero-text {
@@ -33,6 +37,7 @@ background-image: url(../img/hero-mob.jpg);
     padding-top: 212px;
     margin: 0 auto;
     justify-content: center;
+    flex-wrap: wrap;
     
     color: #fafafa;
 }
@@ -73,11 +78,14 @@ background-image: url(../img/hero-mob.jpg);
         width: 768px;
     } */
     .hero {
-        background-image: url(../img/hero-pl.jpg);
+        /* background-image: url(../img/hero-pl.jpg); */
+    }
+    .hero .container {
+        padding: 300px 32px 32px;
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero-pl-2x.jpg);
+            /* background-image: url(../img/hero-pl-2x.jpg); */
         }
     }
     .hero-text {
@@ -108,12 +116,15 @@ background-image: url(../img/hero-mob.jpg);
         width: 1440px;
     } */
     .hero {
-        padding: 300px 32px 32px 178px;
-        background-image: url(../img/hero-desctop.jpg);
+        /* padding: 300px 32px 32px 178px; */
+        /* background-image: url(../img/hero-desctop.jpg); */
+    }
+    .hero-text {
+        padding: 0 146px;
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero-desctop-2x.jpg);
+            /* background-image: url(../img/hero-desctop-2x.jpg); */
         }
     }
 }
