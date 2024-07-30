@@ -19,5 +19,9 @@ import {
 import { initSwiper } from './js/reviews';
 initSwiper();
 
+
 import { addSwiperProj } from './js/projects';
 addSwiperProj();
+
+import { headerAktivator } from './js/header';
+headerAktivator();

@@ -2,6 +2,7 @@
 
 .wt-section {
     padding: 32px 16px;
+    background-image: url();
 }
 
 .wt-img {
@@ -35,8 +36,6 @@
     .wt-img {
         width: 70px;
         height: 70px;
-
-        margin-right: 20px;
     }
 
     .wt-title {
