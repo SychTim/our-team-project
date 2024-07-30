@@ -91,11 +91,11 @@
   }
 
   .aboutme-container-story {
-    min-width: 50%;
+    min-width: 680px;
   }
 
   .aboutme-photo {
-    min-width: 50%;
+    min-width: 680px;
     height: 700px;
     background-image: url('../img/aboutme-1x.png');
   }
