@@ -18,3 +18,6 @@ import {
 
 import { initSwiper } from './js/reviews';
 initSwiper();
+
+import { addSwiperProj } from './js/projects';
+addSwiperProj();
