@@ -29,8 +29,6 @@
 .faq-item .faq-list-btn {
   font: inherit;
   padding: 0;
-}
-.faq-list-btn p {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
@@ -40,7 +38,9 @@
   padding-top: 20px;
   padding-bottom: 16px;
 }
-
+.faq-item .faq-list-btn:focus {
+  color: #fafafa;
+}
 .faq-item .faq-list-btn::after {
   content: url(../img/arrow-down.svg);
   width: 30px;
@@ -70,7 +70,7 @@
     padding-bottom: 18px;
   }
 
-  .faq-list-btn p {
+  .faq-item .faq-list-btn {
     padding-right: 200px;
     padding-top: 32px;
     padding-bottom: 24px;
@@ -119,7 +119,7 @@
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
-  .faq-list-btn p {
+  .faq-item .faq-list-btn {
     padding-right: 60px;
     padding-bottom: 42px;
   }
