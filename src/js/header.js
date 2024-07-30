@@ -67,7 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('header-menu-text').addEventListener('click', function() {
     const menuList = document.getElementById('menu-list');
-    menuList.style.display = menuList.style.display === 'block' ? 'none' : 'block';
+    if (menuList.classList.contains('is-is') || menuList.style.display === 'none') {
+        menuList.style.display = 'block';
+        menuList.classList.remove("is-is");
+    } else {
+        menuList.classList.add("is-is");
+    }
 });
 
 document.querySelectorAll('#menu-list a').forEach(anchor => {
