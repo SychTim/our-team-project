@@ -34,7 +34,6 @@ background-image: url(../img/hero-mob.jpg);
     padding-top: 212px;
     margin: 0 auto;
     justify-content: center;
-    
     color: #fafafa;
 }
 .hero-icon-li {
@@ -44,6 +43,14 @@ background-image: url(../img/hero-mob.jpg);
     width: 37px;
     height: 37px;
     justify-content: center;
+}
+/* .link-container {
+    display: inline-block;
+    padding: 20px;
+} */
+  
+.link-container a {
+    display: block;
 }
 .socials {
     display: flex;
