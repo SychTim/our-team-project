@@ -23,11 +23,16 @@ export function aboutmeswipper() {
       swiperWrapper.appendChild(clone);
     });
 
-    const swiper = new Swiper('.aboutme-skills-swiper', {
+    const swiperAbout = new Swiper('.aboutme-skills-swiper', {
       speed: 400,
       spaceBetween: 0,
       loop: true,
       setWrapperSize: true,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
       breakpoints: {
         1440: {
           slidesPerView: 6,
@@ -55,7 +60,7 @@ export function aboutmeswipper() {
 
     const btnNext = document.querySelector('.aboutme-skills-btn');
     btnNext.addEventListener('click', () => {
-      swiper.slideNext();
+      swiperAbout.slideNext();
     });
   });
 }

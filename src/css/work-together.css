@@ -2,6 +2,8 @@
 
 .wt-section {
     padding: 32px 16px;
+    background-image: url();
+    position: relative;
 }
 
 .wt-img {
@@ -35,8 +37,6 @@
     .wt-img {
         width: 70px;
         height: 70px;
-
-        margin-right: 20px;
     }
 
     .wt-title {
@@ -57,6 +57,9 @@
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 
     color: var(--main-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
 
     padding-bottom: 20px;
     margin-bottom: 16px;
@@ -71,7 +74,43 @@
 .wt-input:focus-visible {
     outline: none;
 }
+.wt-input.val {
+    border-color: green;
+}
+.wt-input.inVal {
+    border-color: red;
+}
 
+.wt-supp-text {
+    display: none;
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    transform: translateY(49px);
+}
+.wt-supp-text.val {
+    color: green;
+    display: block;
+}
+.wt-supp-text.inVal {
+    color: red;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .wt-input.val {
+        margin-bottom: 50px;
+    }
+    .wt-input.inVal {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .wt-supp-text {
+        transform: translateY(96px);
+    }
+}
 .wt-button {
     width: 100px;
     height: 100px;
