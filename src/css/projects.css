@@ -55,9 +55,11 @@
   letter-spacing: -0.03em;
   padding-left: 32px;
   padding-right: 32px;
+  margin-bottom: 32px;
 }
 
 .projects-advantages-text-link-button {
+  display: inline-flex;
   border-radius: 60px;
   padding: 13px 32px;
   font-weight: 500;
@@ -66,8 +68,9 @@
   border: none;
   color: #fafafa;
   background-color: #ed3b44;
-  margin: 32px 0 32px 32px;
   transition: color 250ms;
+  margin-left: 32px;
+  margin-bottom: 32px;
 }
 
 .projects-advantages-text-link-button:hover {
@@ -147,7 +150,8 @@
 
   .projects-advantages-text-link-button {
     padding: 18px 50px;
-    margin: 32px 0 64px 64px;
+    margin-left: 64px;
+    margin-bottom: 64px;
   }
 
   .projects-advantages-img {
@@ -183,6 +187,10 @@
 
   .projects-advantages-text {
     border-radius: 24px 0 0 24px;
+  }
+
+  .projects-advantages-text-link-button {
+    margin-bottom: 0;
   }
 
   .projects-advantages-img {
