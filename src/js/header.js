@@ -1,5 +1,4 @@
 export function headerAktivator() {
-document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('header-menu-icon');
     const menuText = document.getElementById('header-menu-text');
     const closeIcon = document.getElementById('header-close-icon');
@@ -53,9 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Close modal on backdrop click
-    document.getElementById('modal-backdrop').addEventListener('click', function () {
-        document.getElementById('modal').style.display = 'none';
-    });
+    // const modalBackdrop = document.getElementById('modal-backdrop');
+    // modalBackdrop.addEventListener('click', function () {
+    //     document.getElementById('modal').style.display = 'none';
+    // });
 
     // Close modal on 'Escape' key press
     document.addEventListener('keydown', function (event) {
@@ -64,31 +64,33 @@ document.addEventListener('DOMContentLoaded', function () {
             menu.style.display = 'none'; // Close the menu
         }
     });
-});
 
-document.getElementById('header-menu-text').addEventListener('click', function() {
-    const menuList = document.getElementById('menu-list');
-    if (menuList.classList.contains('is-is') || menuList.style.display === 'none') {
-        menuList.style.display = 'block';
-        menuList.classList.remove("is-is");
-    } else {
-        menuList.classList.add("is-is");
-    }
-});
-
-document.querySelectorAll('#menu-list a').forEach(anchor => {
-    anchor.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth'
-            });
+    document.getElementById('header-menu-text').addEventListener('click', function() {
+        const menuList = document.getElementById('menu-list');
+        if (menuList.classList.contains('is-is') || menuList.style.display === 'none') {
+            menuList.style.display = 'block';
+            menuList.classList.remove("is-is");
+        } else {
+            menuList.classList.add("is-is");
         }
-        
-        document.getElementById('menu-list').style.display = 'none';
     });
-});
-}
+
+    document.querySelectorAll('#menu-list a').forEach(anchor => {
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            
+            document.getElementById('menu-list').style.display = 'none';
+        });
+    });
+};
+
+
+

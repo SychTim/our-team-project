@@ -33,7 +33,6 @@ export function addSwiperProj() {
 
   function nextSlide() {
     swiperProjects.slideNext();
-    console.log(swiperProjects.activeIndex);
     if (swiperProjects.activeIndex === 2) {
       buttNext.classList.add('is-dark');
     } else {
@@ -44,7 +43,6 @@ export function addSwiperProj() {
 
   function prevSlide() {
     swiperProjects.slidePrev();
-    console.log(swiperProjects.activeIndex);
     if (swiperProjects.activeIndex === 0) {
       buttPrev.classList.add('is-dark');
     } else {
