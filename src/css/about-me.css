@@ -143,6 +143,14 @@ li.swiper-slide {
     font-size: 20px;
   }
 }
+.aboutme-skills-btn::after {
+  display: flex;
+  content: url(../img/icon-next.svg);
+  width: 28px;
+  height: 28px;
+  fill: var(--arrow);
+  animation: wiggle-right 1s infinite;
+}
 
 .aboutme-skills-btn {
   background-color: transparent;
@@ -174,14 +182,6 @@ li.swiper-slide {
   }
 }
 
-.aboutme-skills-btn-icon {
-  width: 28px;
-  height: 28px;
-  stroke: var(--arrow);
-  stroke-width: 2px;
-  animation: wiggle-right 1s infinite;
-}
-
 .aboutme-container-skills {
   display: flex;
 }
@@ -192,7 +192,7 @@ li.swiper-slide {
     margin-left: 64px;
   }
 
-  .aboutme-skills-btn-icon {
+  .aboutme-skills-btn::after {
     width: 40px;
     height: 40px;
   }
@@ -225,8 +225,11 @@ li.swiper-slide {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 20px;
 }
-
+.aboutme-list-accordion-first {
+  padding-bottom: 20px;
+}
 .aboutme-accordion-item .btn-arrow-read-more {
   font: inherit;
   padding: 0;
@@ -270,9 +273,10 @@ li.swiper-slide {
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
-  padding-bottom: 20px;
 }
-
+.aboutme-text-accordion-first {
+  margin-bottom: 32px;
+}
 .aboutme-accordion {
   display: flex;
   flex-direction: column;
@@ -287,7 +291,10 @@ li.swiper-slide {
     gap: 16px;
     padding-bottom: 32px;
   }
-  .aboutme-text-accordion {
+  .aboutme-list-accordion {
+    padding-bottom: 32px;
+  }
+  .aboutme-list-accordion-first {
     padding-bottom: 32px;
   }
   .aboutme-accordion-item .btn-arrow-read-more {
@@ -323,9 +330,5 @@ li.swiper-slide {
     margin-left: 50%;
     margin-right: 60px;
     gap: 32px;
-  }
-
-  .aboutme-text-accordion {
-    max-width: 612px;
   }
 }
