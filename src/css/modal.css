@@ -58,9 +58,6 @@
     width: 22px;
     height: 22px;
 }
-.modal-svg use {
-    transform: translate(-5px, -5px);
-}
 
 @media screen and (min-width: 768px) {
     .modal-windov {
