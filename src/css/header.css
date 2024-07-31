@@ -191,7 +191,6 @@ nav .header-menu-text {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
   transition: color 250ms ease-in-out;
@@ -200,13 +199,17 @@ nav .header-menu-text {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
+  transition: color 250ms, border-color 250ms;
+  line-height: 0.6;
+  border-bottom: 1.2px solid #fafafa;
+  padding-bottom: 1px;
 }
 
 .header-menu ul li a:hover {
   color: #ed3b44;
+  border-color: #ed3b44;
 }
 
 .header-menu a {
