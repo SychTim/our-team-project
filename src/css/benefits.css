@@ -68,7 +68,7 @@
   text-align: center;
   width: 187px;
   height: 55px;
-  margin-top:32px;
+  margin-top: 32px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -105,7 +105,7 @@
   .container-benefits {
     display: flex;
     flex-wrap: wrap;
-    gap: 412px;
+    /* gap: 412px; */
     justify-content: space-between;
   }
   .benefits-list {
@@ -117,6 +117,6 @@
   }
 
   .order-project {
-    margin-left: 748px;
+    margin-left: 712px;
   }
 }
