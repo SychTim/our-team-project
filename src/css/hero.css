@@ -1,17 +1,19 @@
 .hero {
-    background-image: url(../img/hero/hero-mob.jpg);
+    background-image: url(../img/hero/glasseffect-t.avif);
     background-position: -250px;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+    background-position: left;
+    background-size: 82.6vw;
 }
 
 .hero .container {
     padding: 281px 16px 32px;
     
 }
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/hero/hero-mob-2x.jpg);
+        background-image: url(../img/hero/glasseffect-t@2x.avif);
     }
 }
 .hero-text {
@@ -73,16 +75,13 @@
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../img/hero/hero-pl.jpg);
+        background-image: url(../img/hero/glasseffect-t.avif);
+        background-size: 75.6vw;
     }
     .hero .container {
         padding: 300px 32px 32px;
     }
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .hero {
-            background-image: url(../img/hero/hero-pl-2x.jpg);
-        }
-    }
+    
     .hero-text {
         font-size: 90px;
         margin: none;
@@ -105,20 +104,24 @@
         height: 55px;
         font-size: 16px;
     }
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../img/hero/glasseffect-t@2x.avif);
+        }
+    }
 }
+
 @media screen and (min-width: 1440px) {
     .hero {
-        background-image: url(../img/hero/hero-desctop.jpg);
-        background-position: left;
-        background-size: contain;
-        background-size: 56vw;
+        background-image: url(../img/hero/glasseffect-d.avif);
+        background-size: 50.5vw;
     }
     .hero-text {
         padding: 0 146px;
     }
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../img/hero/hero-desctop-2x.jpg);
+            background-image: url(../img/hero/glasseffect-d@2x.avif);
         }
     }
 }
