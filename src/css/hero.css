@@ -1,16 +1,3 @@
-/* .container {
-    margin: 0;
-} */
-.hero {
-display: flex;
-flex-wrap: wrap;
-/* padding: 281px 16px 32px; */
-/* background-position: center; */
-/* background-repeat: no-repeat; */
-/* width: 100vw;
-height: 100vh; */
-/* background: linear-gradient(to right, rgba(255, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.8) 70%); */
-}
 .hero .container {
     padding: 281px 16px 32px;
     background-image: url(../img/hero/hero-mob.jpg);
@@ -49,15 +36,23 @@ height: 100vh; */
     width: 37px;
     height: 37px;
     justify-content: center;
+    padding: 10px;
 }
+
 .socials {
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .hero-icon-a {
     justify-content: center;
+    display: block; /* Убедитесь, что ссылка занимает всю область контейнера */
+    width: 100%;
+    height: 100%;
+    text-align: center; /* Центрирование текста внутри ссылки */
+    padding: 10px 0; /* Увеличение области клика */
 }
 
 .hero-email {
@@ -75,9 +70,6 @@ height: 100vh; */
 }
 
 @media screen and (min-width: 768px) {
-    /* .container {
-        width: 768px;
-    } */
     .hero .container {
         background-image: url(../img/hero/hero-pl.jpg);
     }
@@ -113,9 +105,6 @@ height: 100vh; */
     }
 }
 @media screen and (min-width: 1440px) {
-    /* .container {
-        width: 1440px;
-    } */
     .hero .container {
         background-image: url(../img/hero/hero-desctop.jpg);
     }
