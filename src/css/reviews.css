@@ -43,7 +43,7 @@
   }
 }
 
-.title {
+.reviews .title {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -155,7 +155,7 @@
   display: block;
 }
 
-.reviews .buttons {
+.reviews .reviews-buttons {
   margin-top: 32px;
   display: flex;
   flex-direction: row;
@@ -164,7 +164,8 @@
   gap: 20px;
 }
 
-.reviews .buttons button {
+.reviews .reviews-buttons .reviews-button-left,
+.reviews .reviews-buttons .reviews-button-right {
   background: none;
   border: none;
   padding: 10px;
@@ -179,8 +180,8 @@
   flex-direction: row;
 }
 
-.buttons .button-left svg,
-.buttons .button-right svg {
+.reviews .reviews-buttons .reviews-button-left svg,
+.reviews .reviews-buttons .reviews-button-right svg {
   width: 32px;
   height: 32px;
   fill: none;
@@ -188,34 +189,31 @@
   stroke-width: 2;
 }
 
-.buttons .button-left svg use,
-.buttons .button-right svg use {
+.reviews .reviews-buttons .reviews-button-left svg use,
+.reviews .reviews-buttons .reviews-button-right svg use {
   pointer-events: none;
 }
 
-.button-left:disabled {
+.reviews .reviews-buttons .reviews-button-left:disabled {
   color: rgba(255, 255, 255, 0.3);
   cursor: not-allowed;
 }
 
-.button-right:disabled {
+.reviews .reviews-buttons .reviews-button-right:disabled {
   color: rgba(255, 255, 255, 0.3);
   cursor: not-allowed;
 }
 
-.button-left:enabled {
+.reviews .reviews-buttons .reviews-button-left:enabled,
+.reviews .reviews-buttons .reviews-button-right:enabled {
   color: rgba(255, 255, 255, 1);
 }
 
-.button-right:enabled {
-  color: rgba(255, 255, 255, 1);
-}
-
-.button-left svg {
+.reviews .reviews-buttons .reviews-button-left svg {
   transform: rotate(180deg);
 }
 
-.buttons button:not(:disabled):hover {
+.reviews .reviews-buttons button:not(:disabled):hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);

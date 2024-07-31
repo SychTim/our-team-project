@@ -27,8 +27,8 @@ export const loadReviews = () => {
 
   const reviewsHtml = reviews
     .map(
-      review => `
-    <div class="swiper-slide">
+      review =>
+        `<div class="swiper-slide">
       <ul class="review-cards">
         <li class="photo">
           <img src="${review.avatar_url}" alt="${review.author}" />
@@ -38,8 +38,7 @@ export const loadReviews = () => {
           <li class="review"><a href="#">${review.review}</a></li>
         </div>
       </ul>
-    </div>
-  `
+    </div>`
     )
     .join('');
 
@@ -50,8 +49,8 @@ export const loadReviews = () => {
   } else {
     swiperInstance = new Swiper('.reviews-swiper', {
       navigation: {
-        nextEl: '.button-right',
-        prevEl: '.button-left',
+        nextEl: '.reviews-button-right',
+        prevEl: '.reviews-button-left',
       },
       slidesPerView: 1,
       spaceBetween: 16,
@@ -76,25 +75,25 @@ export const loadReviews = () => {
       },
       on: {
         reachEnd: () => {
-          document.querySelector('.button-right').disabled = true;
+          document.querySelector('.reviews-button-right').disabled = true;
           document
-            .querySelector('.button-right')
+            .querySelector('.reviews-button-right')
             .setAttribute('aria-disabled', 'true');
         },
         reachBeginning: () => {
-          document.querySelector('.button-left').disabled = true;
+          document.querySelector('.reviews-button-left').disabled = true;
           document
-            .querySelector('.button-left')
+            .querySelector('.reviews-button-left')
             .setAttribute('aria-disabled', 'true');
         },
         fromEdge: () => {
-          document.querySelector('.button-right').disabled = false;
+          document.querySelector('.reviews-button-right').disabled = false;
           document
-            .querySelector('.button-right')
+            .querySelector('.reviews-button-right')
             .setAttribute('aria-disabled', 'false');
-          document.querySelector('.button-left').disabled = false;
+          document.querySelector('.reviews-button-left').disabled = false;
           document
-            .querySelector('.button-left')
+            .querySelector('.reviews-button-left')
             .setAttribute('aria-disabled', 'false');
         },
       },
@@ -109,8 +108,8 @@ export const initSwiper = async () => {
 };
 
 export const updateButtonStates = () => {
-  const buttonLeft = document.querySelector('.button-left');
-  const buttonRight = document.querySelector('.button-right');
+  const buttonLeft = document.querySelector('.reviews-button-left');
+  const buttonRight = document.querySelector('.reviews-button-right');
 
   buttonLeft.disabled = swiperInstance.isBeginning;
   buttonRight.disabled = swiperInstance.isEnd;
