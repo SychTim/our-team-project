@@ -7,7 +7,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
-    padding: 10px 20px;
+    padding: 32px 16px 0;
     background: transparent;
     width: 100%;
     padding-left: 16px;
@@ -16,7 +16,7 @@ header {
     margin-right: auto;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translateX(-50%);
 }
 
 .header-profile {
@@ -53,13 +53,17 @@ nav .header-menu-text {
     letter-spacing: -0.02em;
     text-decoration-skip-ink: none;
     color: #fafafa;
-    top: 58px;
+    top: 77px;
     text-align: center;
-    transition: transform 250ms ease-in;
+    transition: opacity 250ms ease-in;
 }
 
 .is-is {
-    transform: scaleY(0);
+    opacity: 0;
+}
+
+#menu-list li a {
+    transition: color 250ms;
 }
 
 #menu-list li a:hover {
@@ -83,10 +87,13 @@ nav .header-menu-text {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #fafafa;
     cursor: pointer;
+    line-height: 0.6;
+
+    border-bottom: 1.2px solid #FAFAFA;
+    padding-bottom: 3px;
 }
 
 .header-order-button {
@@ -212,7 +219,7 @@ nav .header-menu-text {
     }
 
     #menu-list {
-        left: 371px;
+        left: 366px;
     }
 
     .header-menu-text {
@@ -231,7 +238,7 @@ nav .header-menu-text {
     }
 
     #menu-list {
-        left: 710px;
+        left: 704px;
     }
 
     .header-profile img {

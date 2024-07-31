@@ -69,9 +69,10 @@ export function headerAktivator() {
         const menuList = document.getElementById('menu-list');
         if (menuList.classList.contains('is-is') || menuList.style.display === 'none') {
             menuList.style.display = 'block';
-            menuList.classList.remove("is-is");
+            setTimeout(() => menuList.classList.remove("is-is"), 0)
         } else {
             menuList.classList.add("is-is");
+            setTimeout(() => menuList.style.display = 'none', 250)
         }
     });
 
@@ -86,8 +87,8 @@ export function headerAktivator() {
                     behavior: 'smooth'
                 });
             }
-            
-            document.getElementById('menu-list').style.display = 'none';
+            setTimeout(() => document.getElementById('menu-list').style.display = 'none', 250)
+            document.getElementById('menu-list').classList.add('is-is');
         });
     });
 };
