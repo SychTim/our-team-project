@@ -34,8 +34,8 @@ export const loadReviews = () => {
           <img src="${review.avatar_url}" alt="${review.author}" />
         </li>
         <div class="description">
-          <li class="name"><a href="#">${review.author}</a></li>
-          <li class="review"><a href="#">${review.review}</a></li>
+          <li class="name">${review.author}</li>
+          <li class="review">${review.review}</li>
         </div>
       </ul>
     </div>`
@@ -52,6 +52,7 @@ export const loadReviews = () => {
         nextEl: '.reviews-button-right',
         prevEl: '.reviews-button-left',
       },
+      speed: 500,
       slidesPerView: 1,
       spaceBetween: 16,
       breakpoints: {

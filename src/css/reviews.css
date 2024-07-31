@@ -178,6 +178,7 @@
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   flex-direction: row;
+  transition: background-color, border-color ease-in 250ms;
 }
 
 .reviews .reviews-buttons .reviews-button-left svg,
@@ -224,7 +225,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 .swiper-container {
   overflow: hidden;
