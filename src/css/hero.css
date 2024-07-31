@@ -34,6 +34,7 @@ background-image: url(../img/hero-mob.jpg);
     padding-top: 212px;
     margin: 0 auto;
     justify-content: center;
+    
     color: #fafafa;
 }
 .hero-icon-li {
@@ -43,23 +44,23 @@ background-image: url(../img/hero-mob.jpg);
     width: 37px;
     height: 37px;
     justify-content: center;
+    padding: 10px;
 }
-/* .link-container {
-    display: inline-block;
-    padding: 20px;
-} */
-  
-.link-container a {
-    display: block;
-}
+
 .socials {
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .hero-icon-a {
     justify-content: center;
+    display: block; /* Убедитесь, что ссылка занимает всю область контейнера */
+    width: 100%;
+    height: 100%;
+    text-align: center; /* Центрирование текста внутри ссылки */
+    padding: 10px 0; /* Увеличение области клика */
 }
 
 .hero-email {
