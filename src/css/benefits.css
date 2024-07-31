@@ -82,7 +82,7 @@
 /* Tablet: 768px and up */
 @media screen and (min-width: 768px) {
   .benefit-item {
-    width: calc((100% - 44px) / 2);
+    width: calc((100% - 16px) / 2);
   }
   .order-project {
     margin-top: 64px;
