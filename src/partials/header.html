@@ -1,21 +1,39 @@
 <header>
   <div class="header-container">
     <div class="header-profile">
-      <picture>
-        <source
-          srcset="
-            ./img/work-tog/avatar-88.webp   88w,
-            ./img/work-tog/avatar-132.webp 132w,
-            ./img/work-tog/avatar-210.webp 210w
-          "
-        />
-        <img class="wt-img" src="./img/work-tog/avatar-132.webp" alt="avatar" />
-      </picture>
+      <a href="index.html" class="header-profile-link">
+        <picture>
+          <source
+            srcset="
+              ./img/work-tog/avatar-88.webp   88w,
+              ./img/work-tog/avatar-132.webp 132w,
+              ./img/work-tog/avatar-210.webp 210w
+            "
+            sizes="80px"
+          />
+          <img class="wt-img" src="./img/work-tog/avatar-132.webp" alt="avatar" />
+        </picture>
+      </a>
 
       <a href="index.html" class="header-name-profile">jefferson*</a>
     </div>
     <nav class="header-nav">
-      <span class="header-menu-icon" id="header-menu-icon">&#9868;</span>
+      <span class="header-menu-icon" id="header-menu-icon">
+        <svg class="header-menu-icon-svg" 
+              width="28"
+              height="28" 
+              viewBox="0 0 28 28" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+              >
+        <path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" 
+              stroke="#FAFAFA" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              />
+      </svg>
+    </span>
 
       <span class="header-menu-text" id="header-menu-text">Menu</span>
       <ul class="is-is" id="menu-list">
