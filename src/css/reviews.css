@@ -224,3 +224,8 @@
   display: flex;
   flex-direction: row;
 }
+
+
+.swiper-container {
+  overflow: hidden;
+}
