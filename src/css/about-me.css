@@ -174,8 +174,10 @@ li.swiper-slide {
 }
 
 .aboutme-skills-btn-icon {
+  width: 28px;
+  height: 28px;
   stroke: var(--arrow);
-  fill: none;
+  stroke-width: 2px;
   animation: wiggle-right 1s infinite;
 }
 
@@ -227,8 +229,6 @@ li.swiper-slide {
 .aboutme-accordion-item .btn-arrow-read-more {
   font: inherit;
   padding: 0;
-}
-.btn-arrow-read-more p {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
@@ -287,8 +287,7 @@ li.swiper-slide {
     gap: 16px;
     padding-bottom: 32px;
   }
-
-  .btn-arrow-read-more p {
+  .aboutme-accordion-item .btn-arrow-read-more {
     padding-right: 200px;
     padding-top: 32px;
     padding-bottom: 24px;
@@ -305,18 +304,13 @@ li.swiper-slide {
     .btn-arrow-read-more::after {
     content: url(../img/arrow.svg);
   }
-  .aboutme-text-accordion {
-    /* padding-bottom: 32px;
-    padding-top: 12px; */
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  .btn-arrow-read-more p {
+  .aboutme-accordion-item .btn-arrow-read-more {
     padding-right: 60px;
   }
-
-  .aboutme-accordion-item .btn-arrow-read-more::after {
+  ʼ .aboutme-accordion-item .btn-arrow-read-more::after {
     top: 50%;
   }
   .aboutme-text-accordion {
