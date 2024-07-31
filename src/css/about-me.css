@@ -149,6 +149,7 @@ li.swiper-slide {
   cursor: pointer;
   border: none;
   margin-left: 55px;
+  transition: color 0s ease;
 }
 
 @keyframes wiggle-right {
@@ -235,7 +236,7 @@ li.swiper-slide {
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
   padding-right: 60px;
-  padding-bottom: 24px;
+  padding-bottom: 44px;
   padding-top: 20px;
 }
 
@@ -247,9 +248,8 @@ li.swiper-slide {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding-bottom: 20px;
 }
-.aboutme-accordion-item .aboutme-accord-dropdown .faq-list-text {
+.aboutme-accordion-item .aboutme-accord-dropdown {
   padding: 0;
   font-weight: 500;
   font-size: 16px;
@@ -270,7 +270,7 @@ li.swiper-slide {
   line-height: 150%;
   letter-spacing: -0.02em;
   color: var(--main-text);
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
 }
 
 .aboutme-accordion {
@@ -287,10 +287,13 @@ li.swiper-slide {
     gap: 16px;
     padding-bottom: 32px;
   }
+  .aboutme-text-accordion {
+    padding-bottom: 32px;
+  }
   .aboutme-accordion-item .btn-arrow-read-more {
     padding-right: 200px;
     padding-top: 32px;
-    padding-bottom: 24px;
+    padding-bottom: 48px;
   }
 
   .aboutme-accordion-item .btn-arrow-read-more::after {
