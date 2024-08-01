@@ -5,6 +5,7 @@
   |============================
 */
 
+@import url('./modern-normalize.css');
 @import url('./reset.css');
 @import url('./about-me.css');
 @import url('./benefits.css');
