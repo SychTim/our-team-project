@@ -39,6 +39,7 @@
   }
   
   .marquee_animation {
+    animation-direction: alternate;
     animation-name: marqueeLine;
     animation-duration: 10s;
     animation-play-state: running;
